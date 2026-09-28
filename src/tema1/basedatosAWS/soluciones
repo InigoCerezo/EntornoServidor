@@ -1,0 +1,8 @@
+SELECT nombre, especie FROM personajes;
+SELECT nombre, nivel_inteligencia FROM personajes WHERE nivel_inteligencia > 80
+SELECT p.nombre, a.descripcion FROM personajes p JOIN public.aventuras a on p.id = a.personaje_id WHERE p.nombre = 'Summer Smith'
+SELECT p.nombre, COUNT(a.id) AS total_aventuras FROM personajes p LEFT JOIN aventuras a ON p.id = a.personaje_id GROUP BY p.id, p.nombre;
+SELECT a.*  FROM aventuras a JOIN personajes p ON a.personaje_id = p.id WHERE p.habilidad_especial = '%Portal gun%';
+SELECT p.nombre FROM personajes p JOIN aventuras a ON p.id = a.personaje_id GROUP BY p.id, p.nombre HAVING COUNT(DISTINCT a.planeta_id) > 3;
+SELECT DISTINCT p.nombre FROM personajes p JOIN aventuras a ON p.id = a.personaje_id JOIN planetas pl ON a.planeta_id = pl.id WHERE p.especie = 'Humano' AND pl.afiliacion_gobierno = 'Federación Galáctica';
+SELECT AVG(nivel_inteligencia) AS promedio_inteligencia FROM personajes WHERE id IN (SELECT a.personaje_id FROM aventuras a JOIN planetas pl ON a.planeta_id = pl.id WHERE pl.nombre = 'Blips and Chitz');
