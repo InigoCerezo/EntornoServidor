@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="rick_morty@rickymorty.cq7lxjijuw94.us-east-1.rds.amazonaws.com" uuid="d03f8f50-094b-463b-9df3-342df0faf108">
+    <data-source source="LOCAL" name="rick_morty_spring@rickymortyspring.cq7lxjijuw94.us-east-1.rds.amazonaws.com" uuid="d03f8f50-094b-463b-9df3-342df0faf108">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://rickymorty.cq7lxjijuw94.us-east-1.rds.amazonaws.com:5432/rick_morty</jdbc-url>
+      <jdbc-url>jdbc:postgresql://rickymortyspring.cq7lxjijuw94.us-east-1.rds.amazonaws.com:5432/rick_morty_spring</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="com.intellij.clouds.kubernetes.db.host.port" />
+        <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
+        <property name="com.intellij.clouds.kubernetes.db.container.port" />
+      </jdbc-additional-properties>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="postgres@localhost" uuid="0e478de3-57ec-4f8c-b43f-9afdef3591ea">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.host.port" />
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
