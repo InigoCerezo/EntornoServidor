@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/tema1/morty1/morty1.iml" filepath="$PROJECT_DIR$/src/tema1/morty1/morty1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/tema1/Actividad3/morty2.iml" filepath="$PROJECT_DIR$/src/tema1/Actividad3/morty2.iml" />
       <module fileurl="file://$PROJECT_DIR$/new stuff2DAW.iml" filepath="$PROJECT_DIR$/new stuff2DAW.iml" />
     </modules>
   </component>
